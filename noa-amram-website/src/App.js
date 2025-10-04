@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AboutTab from './components/About/AboutTab.js';
+import bgImage from './NoaAmramLogo1.png'; // Import your background image
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App"
+      style={{
+        minHeight: '100vh',
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <AboutTab />
     </div>
   );
 }

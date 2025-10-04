@@ -1,0 +1,94 @@
+.about-tab {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.dark-mode .section-title {
+  background: linear-gradient(135deg, #ffffff 0%, #ff69b4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.light-mode .section-title {
+  background: linear-gradient(135deg, #1a1a1a 0%, #ff1493 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-card {
+  backdrop-filter: blur(5px);
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 60px var(--shadow-color);
+}
+
+.dark-mode .about-card {
+  --border-color: rgba(255, 105, 180, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  background: rgba(30, 30, 30, 0.6);
+}
+
+.light-mode .about-card {
+  --border-color: rgba(255, 20, 147, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+
+.dark-mode .about-text {
+  color: #d0d0d0;
+}
+
+.light-mode .about-text {
+  color: #4a4a4a;
+}
+
+.about-education {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.education-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff69b4;
+}
+
+.education-degree {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.dark-mode .education-degree {
+  color: #b0b0b0;
+}
+
+.light-mode .education-degree {
+  color: #4a4a4a;
+}
+
+.education-university {
+  font-size: 1rem;
+}
+
+.dark-mode .education-university {
+  color: #888;
+}
+
+.light-mode .education-university {
+  color: #666;
+}
