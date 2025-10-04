@@ -14,7 +14,7 @@
   --border-color: rgba(255, 105, 180, 0.2);
   --shadow-color: rgba(255, 105, 180, 0.1);
   --text-color: #ffffff;
-  --accent: #ff69b4;
+  --accent: #ffccde;
 }
 
 .light-mode .navbar {
@@ -22,7 +22,7 @@
   --border-color: rgba(255, 20, 147, 0.2);
   --shadow-color: rgba(0, 0, 0, 0.05);
   --text-color: #1a1a1a;
-  --accent: #ff1493;
+  --accent: #fcb3cd;
 }
 
 .navbar-container {
@@ -39,7 +39,7 @@
 
 .navbar-logo {
   margin: 0;
-  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  background: linear-gradient(135deg, #ffccde 0%, #fcb3cd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -70,7 +70,7 @@
 }
 
 .navbar-tab.active {
-  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  background: linear-gradient(135deg, #ffccde 0%, #fcb3cd 100%);
   color: #fff;
   font-weight: bold;
 }

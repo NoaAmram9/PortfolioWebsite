@@ -2,7 +2,7 @@
   border-top: 1px solid var(--border-color);
   padding: 1rem;
   text-align: center;
-  margin-top: 0; /* Remove large margin */
+  margin-top: 0; 
 }
 
 .dark-mode .footer {

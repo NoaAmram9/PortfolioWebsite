@@ -1,0 +1,102 @@
+/* Project Card */
+.project-card {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  color: #ff85c1;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Modal */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.modal-content {
+  background: #fff;
+  color: #ff85c1;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+
+  width: 80%;           
+  max-width: 500px;     
+  min-width: 300px;    
+
+  max-height: 80vh;    
+  overflow-y: auto;     
+  
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+/* Close Button */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Images inside Modal */
+.modal-image {
+  width: 100%;
+  max-width: 700px;       /* מגבלת רוחב */
+  max-height: 400px;      /* מגבלת גובה */
+  object-fit: contain;     /* שומר על פרופורציות */
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Video inside Modal */
+.modal-video {
+  width: 100%;
+  max-width: 700px;       /* מגבלת רוחב */
+  max-height: 400px;      /* מגבלת גובה */
+  object-fit: contain;     /* שומר על פרופורציות */
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.modal-git {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #ffb3d9, #ff85c1);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.modal-git:hover {
+  transform: translateY(-3px);
+}

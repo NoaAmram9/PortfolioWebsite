@@ -1,18 +1,21 @@
 .home-tab {
   min-height: 100vh;
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; 
   align-items: center;
-  overflow: auto; /* Allow scroll only if absolutely necessary */
+  overflow: auto;
   box-sizing: border-box;
-  padding: 24px;
+  /* padding: 24px; */
+  padding-top: 30px; 
+    padding-bottom: 0px;
 }
 
+
+
 .home-avatar {
-  width: 200px;
-  height: 200px;
+  width: 200px !important;
+  height: 200px !important;
   border-radius: 50%;
   background: linear-gradient(135deg, #e9c0d4 0%, #f8cee4 100%);
   margin: 0 auto 2rem;
@@ -30,14 +33,14 @@
 }
 
 .dark-mode .home-title {
-  background: linear-gradient(135deg, #ffffff 0%, #ff69b4 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffccde 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .light-mode .home-title {
-  background: linear-gradient(135deg, #1a1a1a 0%, #ff1493 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #ff85c1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,7 +92,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+background: linear-gradient(135deg, #ffccde 0%, #fcb3cd 100%);
   color: #fff;
   box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
 }
@@ -100,8 +103,8 @@
 
 .btn-secondary {
   background: transparent;
-  color: #ff69b4;
-  border: 2px solid #ff69b4;
+  color: #ffb3d9;
+  border: 2px solid #ffb3d9;
 }
 
 .btn-secondary:hover {
@@ -115,7 +118,8 @@
 .home-description,
 .home-buttons {
   flex-shrink: 1;
-  max-width: 90vw;
+  max-width: 50vw;
+    text-align: center;
 }
 
 @media (max-height: 800px) {

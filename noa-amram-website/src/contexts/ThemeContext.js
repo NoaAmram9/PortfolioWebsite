@@ -15,8 +15,8 @@ export const ThemeProvider = ({ children }) => {
       text: '#ffffff',
       textSecondary: '#b0b0b0',
       textTertiary: '#888',
-      accent: '#ff69b4',
-      accentGradient: 'linear-gradient(135deg, #ff69b4 0%, #ff1493 100%)',
+      accent: '#ffccde',
+      accentGradient: 'linear-gradient(135deg, #ffccde 0%, #fcb3cd 100%)',
       border: 'rgba(255, 105, 180, 0.2)',
       shadow: 'rgba(0, 0, 0, 0.5)'
     } : {
@@ -26,8 +26,8 @@ export const ThemeProvider = ({ children }) => {
       text: '#1a1a1a',
       textSecondary: '#4a4a4a',
       textTertiary: '#666',
-      accent: '#ff1493',
-      accentGradient: 'linear-gradient(135deg, #ff1493 0%, #ff69b4 100%)',
+      accent: '#fcb3cd',
+      accentGradient: 'linear-gradient(135deg, #fcb3cd 0%, #ffccde 100%)',
       border: 'rgba(255, 20, 147, 0.2)',
       shadow: 'rgba(0, 0, 0, 0.1)'
     }
