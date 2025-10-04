@@ -1,9 +1,9 @@
 import React from 'react';
-// import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../contexts/LanguageContext';
 import './AboutTab.css';
 
 const AboutTab = () => {
-//   const { t, language } = useLanguage();
+  const { t, language } = useLanguage();
   
 const aboutText = { 
   he: {
@@ -22,16 +22,16 @@ const aboutText = {
 
 return (
     <div className="about-tab">
-        {/* <h2 className="section-title">{t.aboutMe}</h2> */}
+        <h2 className="section-title">{t.aboutMe}</h2>
         <div className="about-card">
-            <p className="about-text">{aboutText.he.p1}</p>
-            <p className="about-text">{aboutText.he.p2}</p>
-            <p className="about-text">{aboutText.he.p3}</p>
+            <p className="about-text">{aboutText[language].p1}</p>
+            <p className="about-text">{aboutText[language].p2}</p>
+            <p className="about-text">{aboutText[language].p3}</p>
             
             <div className="about-education">
-                {/* <h3 className="education-title">{t.education}</h3>
+                <h3 className="education-title">{t.education}</h3>
                 <p className="education-degree"><strong>{t.degree}</strong></p>
-                <p className="education-university">{t.university}</p> */}
+                <p className="education-university">{t.university}</p>
             </div>
         </div>
     </div>
