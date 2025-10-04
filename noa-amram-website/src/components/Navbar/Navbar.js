@@ -20,7 +20,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-content">
-          <h2 className="navbar-logo">Portfolio</h2>
+          <h2 className="navbar-logo">Portfolio - Noa Amram</h2>
           
           <div className="navbar-menu">
             {tabs.map(tab => (

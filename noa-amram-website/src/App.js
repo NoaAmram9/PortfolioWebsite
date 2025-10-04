@@ -5,12 +5,12 @@ import React, { useState } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar/Navbar';
-// import HomeTab from './components/Home/HomeTab';
+import HomeTab from './components/Home/HomeTab';
 import AboutTab from './components/About/AboutTab';
-// import ProjectsTab from './components/Projects/ProjectsTab';
-// import SkillsTab from './components/Skills/SkillsTab';
-// import ContactTab from './components/Contact/ContactTab';
-// import Footer from './components/Footer/Footer';
+import ProjectsTab from './components/Projects/ProjectsTab';
+import SkillsTab from './components/Skills/SkillsTab';
+import ContactTab from './components/Contact/ContactTab';
+import Footer from './components/Footer/Footer';
 import { useTheme } from './contexts/ThemeContext';
 import { useLanguage } from './contexts/LanguageContext';
 import './App.css';
@@ -24,14 +24,14 @@ const AppContent = ({ activeTab, setActiveTab }) => {
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
       
       <div className="main-content">
-        {/* {activeTab === 'home' && <HomeTab  />} */}
-        {activeTab === 'about' && <AboutTab setActiveTab={setActiveTab}/>}
-        {/* {activeTab === 'projects' && <ProjectsTab />}
+        {activeTab === 'home' && <HomeTab setActiveTab={setActiveTab} />}
+        {activeTab === 'about' && <AboutTab />}
+        {activeTab === 'projects' && <ProjectsTab />}
         {activeTab === 'skills' && <SkillsTab />}
-        {activeTab === 'contact' && <ContactTab />} */}
+        {activeTab === 'contact' && <ContactTab />}
       </div>
       
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

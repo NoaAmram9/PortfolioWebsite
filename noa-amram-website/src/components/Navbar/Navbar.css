@@ -61,7 +61,7 @@
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   cursor: pointer;
-  fontSize: 1rem;
+  font-Size: 1rem;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;

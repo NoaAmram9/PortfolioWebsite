@@ -9,7 +9,7 @@ const aboutText = {
   he: {
     p1: 'היי! אני נועה, סטודנטית שנה ג׳ להנדסת תוכנה 🎓 עם אהבה אמיתית לטכנולוגיה, עיצוב ויצירה.',
     p2: 'מאז שאני זוכרת את עצמי אהבתי לפתור בעיות וליצור דברים חדשים - והיום אני עושה את זה דרך קוד.',
-    p3: 'אני שואפת להמשיך ללמוד, להתפתח ולעבוד על פרויקטים שמשלבים יצירתיות, משמעות והשפעה אמיתית. אין כמו לראות רעיון קטן הופך למשהו חי ונושם על המסך 💡',
+    p3: 'אני שואפת להמשיך ללמוד, להתפתח ולעבוד על פרויקטים שמשלבים יצירתיות, משמעות והשפעה אמיתית.',
     p4: 'השאיפה שלי היא לקחת חלק בפיתוח מערכות חכמות ומוצרים חדשניים שמשפרים את חיי היום-יום של אנשים, ולהמשיך לצמוח כמפתחת שמביאה ערך אמיתי לעולם.'
   },
   en: {
@@ -27,7 +27,7 @@ return (
             <p className="about-text">{aboutText[language].p1}</p>
             <p className="about-text">{aboutText[language].p2}</p>
             <p className="about-text">{aboutText[language].p3}</p>
-            
+            <p className="about-text">{aboutText[language].p4}</p>
             <div className="about-education">
                 <h3 className="education-title">{t.education}</h3>
                 <p className="education-degree"><strong>{t.degree}</strong></p>

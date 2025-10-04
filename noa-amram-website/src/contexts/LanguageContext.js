@@ -24,12 +24,12 @@ export const LanguageProvider = ({ children }) => {
       sendMessage: 'שלח הודעה',
       contactInfo: 'פרטי התקשרות',
       education: 'השכלה',
-      degree: 'תואר ראשון במדעי המחשב',
-      university: 'אוניברסיטת תל אביב | 2016-2020',
-      intro: 'היי! אני מפתח Full Stack עם תשוקה עזה לטכנולוגיה וחדשנות.',
+      degree: 'תואר ראשון בהנדסת תוכנה',
+      university: 'אוניברסיטת בר אילן | 2023-2027',
+      intro: 'היי! אני מפתחת Full Stack עם תשוקה עזה לטכנולוגיה וחדשנות.',
       description: 'מתמחה בפיתוח אפליקציות web מתקדמות, בינה מלאכותית ופתרונות טכנולוגיים חדשניים.',
       rights: 'כל הזכויות שמורות',
-      builtWith: 'נבנה באהבה עם React'
+      builtWith: 'נבנה באהבה '
     },
     en: {
       home: 'Home',
@@ -49,12 +49,12 @@ export const LanguageProvider = ({ children }) => {
       sendMessage: 'Send Message',
       contactInfo: 'Contact Information',
       education: 'Education',
-      degree: 'Bachelor of Computer Science',
-      university: 'Tel Aviv University | 2016-2020',
+      degree: 'Bachelor of Software Engineering',
+      university: 'Tel Aviv University | 2023-2027',
       intro: 'Hi! I\'m a Full Stack Developer with a passion for technology and innovation.',
       description: 'Specializing in advanced web applications, artificial intelligence, and innovative technological solutions.',
       rights: 'All rights reserved',
-      builtWith: 'Built with love using React'
+      builtWith: 'Built with love'
     }
   };
   
