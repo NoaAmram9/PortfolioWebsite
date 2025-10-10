@@ -4,12 +4,16 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import ProjectCard from './ProjectCard';
 import './ProjectsTab.css';
 
-import Netflix  from '../../photos/5.png';
-import netflixVideo from '../../photos/netflixApp1.mp4';
+import Netflix  from '../../photos/netfilm.png';
+import netflixImage1 from '../../photos/5.png';
+import netflixVideo from '../../photos/NetApp.mp4';
 import timeManagementVideo from '../../photos/Main.mp4';
 
 import timeManagementImage from '../../photos/last.png';
-import onlineStoreImage from '../../photos/logo.png';
+
+import onlineStoreImage from '../../photos/Barfoo.png';
+import onlineStoreImage2 from '../../photos/closet.png';
+
 import icyTowerImage1 from '../../photos/end.png';
 import icyTowerImage2 from '../../photos/start.png';
 import icyTowerImage3 from '../../photos/theGame.png';
@@ -25,7 +29,7 @@ const ProjectsTab = () => {
     description: 'A streaming platform developed from scratch inspired by Netflix, featuring an end-to-end user experience.',
     tags: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS', 'JavaScript', 'HTML', 'API','CPP'],
     image: Netflix,
-    images: [Netflix], 
+    images: [Netflix,netflixImage1], 
     video: netflixVideo, 
     link: 'https://github.com/avigail100/Netfilm.git'
   },
@@ -35,7 +39,7 @@ const ProjectsTab = () => {
       description: language === 'he' ? 'חנות אונליין מלאה עם עגלת קניות ותשלומים' : 'Full online store with shopping cart and payments',
       tags: ['Acess', 'Python', 'MVC'],
       image: onlineStoreImage,
-      images: [onlineStoreImage], 
+      images: [onlineStoreImage,onlineStoreImage2], 
       video: null,
       link: 'https://github.com/NoaAmram9/OnlineClothingStore.git'
     },
