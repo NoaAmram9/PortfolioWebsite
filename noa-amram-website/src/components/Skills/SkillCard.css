@@ -1,84 +1,48 @@
 .skill-card {
-  backdrop-filter: blur(10px);
-  padding: 1.5rem;
-  border-radius: 15px;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 10px 30px var(--shadow-color);
+  padding: 1.2rem;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: default;
 }
 
 .dark-mode .skill-card {
-  --border-color: rgba(255, 105, 180, 0.2);
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  background: rgba(30, 30, 30, 0.6);
+  background: rgba(40, 40, 40, 0.8);
+  border: 1px solid rgba(255, 105, 180, 0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .light-mode .skill-card {
-  --border-color: rgba(255, 20, 147, 0.2);
-  --shadow-color: rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 20, 147, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.8rem;
-  align-items: center;
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
 }
 
 .skill-name {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .dark-mode .skill-name {
-  color: #ffffff;
+  color: #fff;
 }
 
 .light-mode .skill-name {
-  color: #1a1a1a;
+  color: #222;
 }
 
 .skill-category {
-  font-size: 0.9rem;
-  color: #ffccde;
-  background: rgba(255, 105, 180, 0.15);
-  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #ff69b4;
+  background: rgba(255, 105, 180, 0.1);
+  padding: 0.3rem 0.7rem;
   border-radius: 8px;
-}
-
-.skill-bar-container {
-  height: 12px;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-}
-
-.dark-mode .skill-bar-container {
-  background: rgba(50, 50, 50, 0.5);
-}
-
-.light-mode .skill-bar-container {
-  background: rgba(200, 200, 200, 0.5);
-}
-
-.skill-bar {
-  background: linear-gradient(90deg, #ff85c1 0%, #ff4da6 100%);
-  height: 100%;
-  border-radius: 10px;
-  transition: width 1s ease;
-  box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
-}
-
-.skill-level {
-  text-align: left;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-}
-
-.dark-mode .skill-level {
-  color: #888;
-}
-
-.light-mode .skill-level {
-  color: #666;
+  display: inline-block;
 }

@@ -36,10 +36,11 @@ const ContactTab = () => {
     );
   };
 
-  return (
-    <div className="contact-tab">
-      <h2 className="section-title">{t.contact}</h2>
+ return (
+  <div className="contact-tab">
+    <h2 className="section-title">{t.contact}</h2>
 
+    <div className="contact-content">
       <div className="contact-form-card">
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
@@ -76,7 +77,6 @@ const ContactTab = () => {
           </div>
 
           <button type="submit" className="submit-btn">{t.sendMessage}</button>
-
           {status && <p className="status-text">{status}</p>}
         </form>
       </div>
@@ -97,7 +97,8 @@ const ContactTab = () => {
         </div>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default ContactTab;

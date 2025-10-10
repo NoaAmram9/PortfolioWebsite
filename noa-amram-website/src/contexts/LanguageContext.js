@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState } from 'react';
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('he');
+  const [language, setLanguage] = useState('en'); // 'en' or 'he'
   
   const translations = {
     he: {
@@ -50,7 +50,7 @@ export const LanguageProvider = ({ children }) => {
       contactInfo: 'Contact Information',
       education: 'Education',
       degree: 'Bachelor of Software Engineering',
-      university: 'Tel Aviv University | 2023-2027',
+      university: 'Bar Ilan University | 2023-2027',
       intro: 'Hi! I\'m a Full Stack Developer with a passion for technology and innovation.',
       description: 'Specializing in advanced web applications, artificial intelligence, and innovative technological solutions.',
       rights: 'All rights reserved',

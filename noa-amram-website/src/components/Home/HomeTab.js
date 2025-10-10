@@ -1,6 +1,6 @@
 import { useLanguage } from '../../contexts/LanguageContext';
 import './HomeTab.css';
-import NoaAmramLogo1 from '../../NoaAmramLogo1.png'; // Import your logo
+import NoaAmramLogo1 from '../../NoaAmramLogo1.png'; 
 
 const HomeTab = ({ setActiveTab }) => {
   const { t, language } = useLanguage();

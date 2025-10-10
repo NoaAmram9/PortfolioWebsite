@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Filter, Import } from 'lucide-react';
+import { Filter } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import ProjectCard from './ProjectCard';
 import './ProjectsTab.css';
