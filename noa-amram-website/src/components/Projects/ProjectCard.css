@@ -1,102 +1,123 @@
-/* Project Card */
+/* ─── Project Card (ProjectCard.css equivalents) ────────────── */
 .project-card {
-  cursor: pointer;
-  text-align: center;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 400px;
-  color: #ff85c1;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  group: true; /* For hover logic */
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--divider);
 }
 
 .project-image {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Modal */
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-}
-.modal-content {
-  background: #fff;
-  color: #ff85c1;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 12px;
-
-  width: 80%;           
-  max-width: 500px;     
-  min-width: 300px;    
-
-  max-height: 80vh;    
-  overflow-y: auto;     
-  
-  position: relative;
-  box-sizing: border-box;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-
-/* Close Button */
-.modal-close {
+/* Hover Overlay for image */
+.project-overlay {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-/* Images inside Modal */
-.modal-image {
-  width: 100%;
-  max-width: 700px;       /* מגבלת רוחב */
-  max-height: 400px;      /* מגבלת גובה */
-  object-fit: contain;     /* שומר על פרופורציות */
-  margin: 1rem 0;
-  border-radius: 8px;
+.view-project-btn {
+  background: var(--bg);
+  color: var(--text-pri);
+  padding: 12px 24px;
+  border-radius: 2px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(10px);
+  transition: transform 0.4s ease;
 }
 
-/* Video inside Modal */
-.modal-video {
-  width: 100%;
-  max-width: 700px;       /* מגבלת רוחב */
-  max-height: 400px;      /* מגבלת גובה */
-  object-fit: contain;     /* שומר על פרופורציות */
-  margin: 1rem 0;
-  border-radius: 8px;
+.project-card:hover .project-image {
+  transform: scale(1.03);
 }
 
-.modal-git {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background: linear-gradient(135deg, #ffb3d9, #ff85c1);
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: bold;
-  transition: transform 0.3s ease;
+.project-card:hover .project-overlay {
+  opacity: 1;
 }
 
-.modal-git:hover {
-  transform: translateY(-3px);
+.project-card:hover .view-project-btn {
+  transform: translateY(0);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--text-pri);
+  margin: 0;
+  font-weight: 400;
+}
+
+.project-desc {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-sec);
+  margin: 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.project-tag {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-pri);
+  border: 1px solid var(--divider);
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-tabs-nav {
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: none;
+  }
+  .tab-btn {
+    text-align: left;
+    border-bottom: 1px solid var(--divider);
+  }
 }

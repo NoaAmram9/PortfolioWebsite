@@ -4,15 +4,34 @@ import './Footer.css';
 
 const Footer = () => {
   const { t, language } = useLanguage();
+  const currentYear = new Date().getFullYear();
+  const isHe = language === 'he';
   
   return (
     <footer className="footer">
-      <p className="footer-text">
-        {language === 'he' ? `© 2025 נועה עמרם. ${t.rights}.` : `© 2025 Noa Amram. ${t.rights}.`}
-      </p>
-      <p className="footer-subtext">
-        {t.builtWith} ❤️
-      </p>
+      <div className="footer-content">
+        
+        {/* Left Side: Copyright */}
+        <div className="footer-col">
+          <span className="footer-text">
+            © {currentYear} {isHe ? 'נועה עמרם' : 'Noa Amram'}.
+          </span>
+          <span className="footer-subtext">
+            {t.rights || (isHe ? 'כל הזכויות שמורות' : 'All rights reserved')}.
+          </span>
+        </div>
+        
+        {/* Right Side: Signature / Built With */}
+        <div className="footer-col align-end">
+          <span className="footer-text built-with">
+            {isHe ? 'עוצב ופותח בקפדנות' : 'Engineered & Designed with care'}
+          </span>
+          <span className="footer-subtext">
+            React • Architecture • UX/UI
+          </span>
+        </div>
+        
+      </div>
     </footer>
   );
 };

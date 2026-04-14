@@ -1,55 +1,97 @@
 import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
-import SkillCard from './SkillCard';
 import './SkillsTab.css';
 
 const SkillsTab = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
-    const skills = [
-    // 🖥️ Frontend
-    { name: 'React', category: 'Frontend' },
-    { name: 'Next.js', category: 'Frontend' },
-    { name: 'JavaScript / TypeScript', category: 'Frontend' },
-    { name: 'HTML5 / CSS3', category: 'Frontend' },
-    { name: ' Bootstrap', category: 'Frontend' },
-    { name: 'UI/UX Design', category: 'Frontend' },
+  const textContent = {
+    he: {
+      label: '03 // ארגז הכלים',
+      title: 'עיצוב פוגש טכנולוגיה.',
+      intro: 'השילוב בין הנדסת תוכנה לעיצוב מאפשר לי לא רק לאפיין חוויות משתמש מדויקות ואסתטיות, אלא גם להבין לעומק את הארכיטקטורה שמאחורי הקלעים. כך אני מבטיחה שכל עיצוב הוא לא רק יפה, אלא גם ישים, יעיל ומותאם למערכת.',
+      categories: {
+        ux: 'מחקר ואפיון (UX)',
+        ui: 'עיצוב חזותי (UI)',
+        frontend: 'פיתוח ממשקים (Frontend)',
+        backend: 'הנדסה ומערכות (Backend)',
+        tools: 'כלים ומתודולוגיות'
+      }
+    },
+    en: {
+      label: '03 // TOOLKIT',
+      title: 'Where design meets tech.',
+      intro: 'Bridging software engineering and design allows me to not only create precise and aesthetic user experiences but also deeply understand the architecture behind the scenes. This ensures every design is feasible, efficient, and system-ready.',
+      categories: {
+        ux: 'UX Research & Strategy',
+        ui: 'UI & Visual Design',
+        frontend: 'Frontend Engineering',
+        backend: 'Backend & Systems',
+        tools: 'Tools & Workflow'
+      }
+    }
+  };
 
-    // ⚙️ Backend
-    { name: 'Node.js', category: 'Backend' },
-    { name: 'Express.js', category: 'Backend' },
-    { name: 'Python', category: 'Backend' },
-    { name: 'FastAPI / Flask', category: 'Backend' },
-    { name: 'C++', category: 'Backend' },
-    { name: 'REST APIs', category: 'Backend' },
-    { name: 'Authentication / JWT', category: 'Backend' },
+  const content = textContent[language] || textContent.en;
 
-    // 🧠 AI / Data
-    { name: 'Pandas / NumPy', category: 'AI' },
-
-    // 🗄️ Database
-    { name: 'MongoDB', category: 'Database' },
-    { name: 'Access ', category: 'Database' },
-    { name: 'SQL / SQLite', category: 'Database' },
-    
-
-    // 🐳 DevOps & Cloud
-    { name: 'Docker', category: 'DevOps' },
-    { name: 'Linux / Bash', category: 'DevOps' },
-
-    // 🧰 Tools & Workflow
-    { name: 'Git / GitHub', category: 'Tools' },
-    { name: 'Agile / Scrum', category: 'Tools' },
-    { name: 'Figma', category: 'Tools' },
+  // חילקנו מחדש את הכישורים והוספנו עולם תוכן שלם של UX/UI
+  const skillsData = [
+    {
+      id: 'ux',
+      categoryTitle: content.categories.ux,
+      items: ['User Research', 'Wireframing & Prototyping', 'Information Architecture (IA)', 'Usability Testing', 'User Journeys']
+    },
+    {
+      id: 'ui',
+      categoryTitle: content.categories.ui,
+      items: ['Design Systems', 'Interaction Design', 'Typography & Layout', 'Micro-interactions', 'Responsive Design']
+    },
+    {
+      id: 'frontend',
+      categoryTitle: content.categories.frontend,
+      items: ['React / Next.js', 'JavaScript / TypeScript', 'HTML5 / CSS3', 'Tailwind / UI Libraries']
+    },
+    {
+      id: 'backend',
+      categoryTitle: content.categories.backend,
+      items: ['Node.js / Express', 'Python', 'C++', 'REST APIs', 'SQL / MongoDB', 'System Architecture']
+    },
+    {
+      id: 'tools',
+      categoryTitle: content.categories.tools,
+      items: ['Figma', 'Git / GitHub', 'Agile / Scrum', 'Docker / Linux']
+    }
   ];
 
   return (
     <div className="skills-tab">
-      <h2 className="section-title">{t.mySkills}</h2>
-      <div className="skills-grid">
-        {skills.map(skill => (
-          <SkillCard key={skill.name} skill={skill} />
-        ))}
+      <div className="skills-layout">
+        
+        {/* Left Side: Context & Philosophy */}
+        <div className="skills-sidebar">
+          <span className="skills-label">{content.label}</span>
+          <h2 className="skills-title">{content.title}</h2>
+          <p className="skills-intro">{content.intro}</p>
+        </div>
+
+        {/* Right Side: Architectural Grid of Skills */}
+        <div className="skills-content">
+          <div className="skills-masonry">
+            {skillsData.map((group) => (
+              <div key={group.id} className="skill-category-card">
+                <h3 className="category-header">{group.categoryTitle}</h3>
+                <div className="skill-tags">
+                  {group.items.map((skill, index) => (
+                    <span key={index} className="skill-tag">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );

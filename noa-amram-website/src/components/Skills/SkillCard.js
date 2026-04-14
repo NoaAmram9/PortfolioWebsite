@@ -4,8 +4,8 @@ import './SkillCard.css';
 const SkillCard = ({ skill }) => {
   return (
     <div className="skill-card">
-      <div className="skill-name">{skill.name}</div>
-      <div className="skill-category">{skill.category}</div>
+      <span className="skill-category-label">{skill.category}</span>
+      <h4 className="skill-name">{skill.name}</h4>
     </div>
   );
 };
