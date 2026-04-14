@@ -14,10 +14,8 @@ import onlineStoreImage2 from '../../photos/closet.png';
 import icyTowerImage1 from '../../photos/end.png';
 import icyTowerImage2 from '../../photos/start.png';
 import icyTowerImage3 from '../../photos/theGame.png';
-
-// --- תמונות דמה זמניות לפרויקטי העיצוב ---
-const mockImage1 = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80';
-const mockImage2 = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80';
+import Bag from '../../photos/Bag.png';
+import Casa from '../../photos/Casa.png';
 
 const ProjectsTab = () => {
   const { t, language } = useLanguage();
@@ -94,21 +92,21 @@ const ProjectsTab = () => {
       id: 'ui1',
       title: language === 'he' ? 'CASA - בוטיק קפה ויין' : 'CASA - Coffee & Wine Boutique',
       description: language === 'he'
-        ? 'ארט דיירקשן וניהול סושיאל מלא. בניית שפה ויזואלית חמה ואלגנטית, סידור קפדני של ה-Grid באינסטגרם ליצירת זרימה הרמונית. העבודה כוללת שימוש ב-AI לליטוש תמונות, דיוק תאורה ויצירת נכסים משלימים (תוך דיוק מוחלט בפרומפטים - למשל יצירת אווירה אנושית עם פרומפט של "פנסיונר טרי" הנהנה מקפה בבוקר). ניתן דגש משמעותי להנגשה: שימוש בטקסטים חלופיים (Alt-text), שמירה על קונטרסט קריא והיררכיה ברורה בסטוריז ובפוסטים.'
-        : 'Full Art Direction & Social Media Management. Created a warm, elegant visual language and a meticulously curated Instagram grid. Utilized AI for advanced photo retouching and generating complementary assets with highly specific prompts (e.g., capturing the mood of a "fresh pensioner" enjoying morning coffee). Heavy emphasis on web accessibility: Alt-texts, proper color contrast, and clear hierarchy in stories and posts.',
+        ? 'ארט דיירקשן וניהול סושיאל מלא. בניית שפה ויזואלית חמה ואלגנטית, סידור קפדני של ה-Grid באינסטגרם ליצירת זרימה הרמונית. העבודה כוללת שימוש ב-AI לליטוש תמונות, דיוק תאורה ויצירת נכסים משלימים (תוך דיוק מוחלט בפרומפטים - למשל יצירת אווירה). ניתן דגש משמעותי לשמירה על קונטרסט קריא והיררכיה ברורה בסטוריז ובפוסטים.'
+        : 'Full Art Direction & Social Media Management. Created a warm, elegant visual language and a meticulously curated Instagram grid. Utilized AI for advanced photo retouching and generating complementary assets with highly specific prompts . Heavy emphasis on web accessibility; proper color contrast, and clear hierarchy in stories and posts.',
       tags: ['Art Direction', 'AI Retouching', 'Social Grid UI', 'Accessibility'],
-      image: mockImage1, 
-      link: '#'
+      image: Casa, 
+      link: 'https://www.instagram.com/casa_coffee_wine/'
     },
     {
       id: 'ui2',
-      title: language === 'he' ? 'Atlas - כלי AI למטיילים' : 'Atlas - Travel AI Tool',
+   title: language === 'he' ? 'Hanch Bags - תיקים בעבודת יד' : 'Hanch Bags - Handmade Bags',
       description: language === 'he'
-        ? 'עיצוב ממשק ונוכחות דיגיטלית לכלי AI בתחום התיירות. תרגום פיצ\'רים טכנולוגיים מורכבים לחוויות משתמש פשוטות ואינטואיטיביות בעמוד האינסטגרם (Micro-copy מונגש). שימוש בכלי בינה מלאכותית יוצרת (Generative AI) להרחבת תמונות רקע (Outpainting), תיקוני צבע, ויצירת מוקאפים שמשדרים חדשנות ונוחות.'
-        : 'UI/UX and digital presence for a travel AI tool. Translated complex technological features into simple, intuitive user experiences on the Instagram page through accessible micro-copy. Used Generative AI for background outpainting, color correction, and creating mockups that convey innovation and ease of use.',
-      tags: ['UX/UI', 'Generative AI', 'Micro-copy', 'Brand Identity'],
-      image: mockImage2, 
-      link: '#'
+        ? 'ארט דיירקשן ופיתוח זהות מותג (Brand Identity) למותג בוטיק של תיקים הנתפרים בעבודת יד. הפרויקט מתמקד בבניית שפה ויזואלית אותנטית המעבירה את תחושת הקראפט, הטקסטורה והירידה לפרטים של תפירה עילית. העבודה כוללת ניהול עמוד האינסטגרם, תכנון גריד אסתטי שמייצר איזון בין תמונות אווירה (Lifestyle) לצילומי תקריב של חומרים, וכתיבת תוכן (Micro-copy) שמספר את הסיפור מאחורי כל עיצוב.'
+        : 'Art direction and brand identity development for a boutique handmade bag brand. The project focuses on building an authentic visual language that conveys the craft, texture, and meticulous attention to detail of bespoke tailoring. Work includes Instagram management, designing a cohesive grid that balances lifestyle imagery with material close-ups, and crafting micro-copy that tells the unique story behind each custom design.',
+      tags: ['Brand Identity', 'Creative Direction', 'Social Media UX', 'Visual Storytelling'],
+      image: Bag, 
+      link: 'https://www.instagram.com/hanch_bags/'
     }
   ];
 

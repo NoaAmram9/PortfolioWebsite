@@ -8,10 +8,10 @@ const AboutTab = () => {
   const aboutText = { 
     he: {
       label: '01 // קצת עליי',
-      title: 'עיצוב מונחה לוגיקה.',
+      title: 'קצת עליי.',
       p1: 'היי! אני נועה, מעצבת חווית משתמש (UX/UI) וסטודנטית להנדסת תוכנה. אני מחברת בין ארכיטקטורת מערכות מורכבת לעיצוב אינטואיטיבי ואסתטי.',
       p2: 'הרקע ההנדסי שלי מקנה לי יתרון משמעותי: הבנה עמוקה של מבנים לוגיים, יכולת פתרון בעיות וראייה מערכתית. את הכלים האלו אני מתרגמת לממשקים נקיים, נגישים וזורמים, שפוגשים את המשתמש בדיוק איפה שהוא צריך.',
-      p3: 'הגישה העיצובית שלי מבוססת על מחקר, אמפתיה ודיוק. אני מאמינה שעיצוב מצוין לא מסתכם רק בנראות יוקרתית, אלא בבניית היררכיה נכונה ופישוט תהליכים מורכבים המייצרים ערך אמיתי למוצר.',
+      p3: 'הגישה העיצובית שלי מבוססת על מחקר, אמפתיה ודיוק. אני מאמינה שעיצוב לא מסתכם רק בנראות יוקרתית, אלא בבניית היררכיה נכונה ופישוט תהליכים מורכבים המייצרים ערך אמיתי למוצר.',
       p4: 'כיום, במהלך לימודי התואר בהנדסת תוכנה באוניברסיטת בר-אילן, המטרה שלי היא להוביל יצירה של מוצרים דיגיטליים חכמים, המפשטים את חיי היום-יום באמצעות שילוב של טכנולוגיה ועיצוב אנושי.',
       educationTitle: 'השכלה',
       degree: 'B.Sc. הנדסת תוכנה',
@@ -22,7 +22,7 @@ const AboutTab = () => {
     },
     en: {
       label: '01 // ABOUT ME',
-      title: 'Logic-driven design.',
+      title: 'ABOUT ME.',
       p1: 'Hi! I\'m Noa, a UX/UI Designer and a Software Engineering student. I bridge the gap between complex system architecture and intuitive, aesthetically pleasing design.',
       p2: 'My engineering background gives me a distinct advantage: a deep understanding of logical structures, problem-solving, and systems thinking. I translate these skills into clean, accessible, and seamless user interfaces.',
       p3: 'My design approach is rooted in research, empathy, and precision. I believe that great design is not just about high-end visuals, but about building logical hierarchies and simplifying complex processes to create real product value.',

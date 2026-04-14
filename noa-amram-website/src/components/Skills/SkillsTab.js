@@ -39,12 +39,12 @@ const SkillsTab = () => {
     {
       id: 'ux',
       categoryTitle: content.categories.ux,
-      items: ['User Research', 'Wireframing & Prototyping', 'Information Architecture (IA)', 'Usability Testing', 'User Journeys']
+      items: ['User Research', 'Wireframing & Prototyping', 'Figma', 'Usability Testing', 'User Journeys']
     },
     {
       id: 'ui',
       categoryTitle: content.categories.ui,
-      items: ['Design Systems', 'Interaction Design', 'Typography & Layout', 'Micro-interactions', 'Responsive Design']
+      items: ['Design Systems', 'Figma', 'Typography & Layout', 'Micro-interactions', 'Responsive Design']
     },
     {
       id: 'frontend',
